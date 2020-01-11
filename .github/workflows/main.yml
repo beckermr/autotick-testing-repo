@@ -1,4 +1,21 @@
-on: [push]
+on:
+  pull_request:
+    types:
+      - labeled
+      - unlabeled
+      - synchronize
+      - opened
+      - edited
+      - ready_for_review
+      - reopened
+      - unlocked
+  pull_request_review:
+    types:
+      - submitted
+  status: {}
+  check_run:
+    types:
+      - completed
 
 jobs:
   autotick-action:
