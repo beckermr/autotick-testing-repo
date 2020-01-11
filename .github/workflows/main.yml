@@ -7,4 +7,4 @@ jobs:
     steps:
     - name: autotick-action
       id: aa
-      uses: beckermr/autotick-github-action
+      uses: beckermr/autotick-github-action@v1
