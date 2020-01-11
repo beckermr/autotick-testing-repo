@@ -7,4 +7,6 @@ jobs:
     steps:
     - name: autotick-action
       id: aa
-      uses: beckermr/autotick-github-action@v1
+      uses: beckermr/autotick-github-action@v2
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
