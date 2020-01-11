@@ -1,0 +1,10 @@
+on: [push]
+
+jobs:
+  autotick-action:
+    runs-on: ubuntu-latest
+    name: autotick-action
+    steps:
+    - name: autotick-action
+      id: aa
+      uses: beckermr/autotick-github-action
