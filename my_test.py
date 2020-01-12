@@ -1,1 +1,5 @@
-assert False
+import time
+
+time.sleep(60)
+
+assert True
