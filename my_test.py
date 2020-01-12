@@ -1,3 +1,5 @@
-assert True
+import time
 
-print(10)
+time.sleep(120)
+
+assert True
