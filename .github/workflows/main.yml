@@ -27,6 +27,6 @@ jobs:
     steps:
     - name: regro-cf-autotick-bot-action
       id: regro-cf-autotick-bot-action
-      uses: beckermr/autotick-github-action@v5
+      uses: beckermr/autotick-github-action@prod
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
