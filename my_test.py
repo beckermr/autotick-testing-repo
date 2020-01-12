@@ -1,3 +1,1 @@
-assert True
-
-print(10)
+assert False
