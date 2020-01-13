@@ -30,3 +30,4 @@ jobs:
       uses: beckermr/autotick-github-action@prod
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
+        git-ref: master
