@@ -1,5 +1,5 @@
 import time
 
-time.sleep(120)
+time.sleep(30)
 
-assert True
+assert False
