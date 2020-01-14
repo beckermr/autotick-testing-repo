@@ -1,5 +1,5 @@
 import time
 
-time.sleep(130)
+time.sleep(10)
 
 assert True
