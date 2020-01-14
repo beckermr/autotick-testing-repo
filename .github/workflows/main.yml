@@ -30,4 +30,4 @@ jobs:
       uses: regro/cf-autotick-bot-action@master
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
-        git-ref: master
+        git-ref: init-commit
