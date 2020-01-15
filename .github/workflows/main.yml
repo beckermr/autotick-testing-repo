@@ -12,10 +12,10 @@ on:
   pull_request_review:
     types:
       - submitted
-  status: {}
-  check_run:
-    types:
-      - completed
+#   status: {}
+#   check_run:
+#     types:
+#       - completed
   # these are commented out for now, but they could not be
   # schedule:
   #   - cron:  '0 * * * *'
