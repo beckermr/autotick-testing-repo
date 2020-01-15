@@ -16,6 +16,7 @@ on:
   check_run:
     types:
       - completed
+  # these are commented out for now, but they could not be
   # schedule:
   #   - cron:  '0 * * * *'
   # push: {}
@@ -25,9 +26,10 @@ jobs:
     runs-on: ubuntu-latest
     name: regro-cf-autotick-bot-action
     steps:
-    - name: regro-cf-autotick-bot-action
-      id: regro-cf-autotick-bot-action
-      uses: regro/cf-autotick-bot-action@master
-      with:
-        repo-token: ${{ secrets.GITHUB_TOKEN }}
-        git-ref: init-commit
+      - name: checkout
+        uses: actions/checkout@v2
+      - name: regro-cf-autotick-bot-action
+        id: regro-cf-autotick-bot-action
+        uses: regro/cf-autotick-bot-action@master
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
