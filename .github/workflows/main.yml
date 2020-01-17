@@ -1,11 +1,8 @@
 on:
   status: {}
-  check_run:
+  check_suite:
     types:
       - completed
-  # these are commented out for now, but they could not be
-  # schedule:
-  #   - cron:  '0 * * * *'
 
 jobs:
   regro-cf-autotick-bot-action:
@@ -16,6 +13,6 @@ jobs:
         uses: actions/checkout@v2
       - name: regro-cf-autotick-bot-action
         id: regro-cf-autotick-bot-action
-        uses: regro/cf-autotick-bot-action@master
+        uses: regro/cf-autotick-bot-action@dev
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
